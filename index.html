@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-pay-password</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/vuePayPassword.js"></script>
+  </body>
+  <script type="text/javascript">
+            // 计算html的font-size  
+            (function() {
+                function resizeBaseFontSize() {
+                    var rootHtml = document.documentElement,
+                        deviceWidth = rootHtml.clientWidth;
+
+                    if(deviceWidth > 640) {
+                        deviceWidth = 640;
+                    }
+
+                    rootHtml.style.fontSize = deviceWidth / 7.5 + "px";
+                }
+
+                resizeBaseFontSize();
+
+                window.addEventListener("resize", resizeBaseFontSize, false);
+                window.addEventListener("orientationchange", resizeBaseFontSize, false);
+            })();
+        </script>
+</html>
